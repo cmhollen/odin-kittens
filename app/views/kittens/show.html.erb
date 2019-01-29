@@ -1,0 +1,5 @@
+<h1><%= @kitten.name %></h1>
+<p>Age: <%= @kitten.age %></p><br/>
+<p>Cuteness: <%= @kitten.cuteness %></p><br/>
+<p>Softness: <%= @kitten.softness %><br/>
+<%= link_to "Delete", kitten_path(@kitten), method: :delete %>

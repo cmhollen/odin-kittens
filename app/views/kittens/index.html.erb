@@ -1,0 +1,10 @@
+<h1>All the Kittens</h1>
+
+<% @kittens.each do |k| %>
+    <p>Name: <%= k.name %></p>
+    <p>Age: <%= k.age %></p>
+    <p>Cuteness: <%= k.cuteness %></p>
+    <p>Softness: <%= k.softness %></p><br/><br/>
+    <%= link_to "Edit", edit_kitten_path(k) %>
+    <%= link_to "Delete", kitten_path(k), method: :delete %>
+<% end %>
